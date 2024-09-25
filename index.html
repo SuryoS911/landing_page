@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryo Saputro - XI RPL 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
+        }
+        .nav {
+            background-color: white;
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+            height: 100px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            position: relative;
+            width: 70%;
+        }
+        .nav-logo img {
+            height: 30px;
+            width: auto;
+        }
+        .nav-menu {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+        .nav-link {
+            font-family: "Raleway", sans-serif;
+            font-size: 20px;
+            color: #2f2f2f;
+            text-decoration: none;
+            transition: 0.1s ease-in-out;
+        }
+        .nav-link:hover {
+            cursor: pointer;
+            color: rgb(255, 122, 66);
+        }
+        .nav-button button {
+            padding: 15px 30px;
+            font-size: 13px;
+            background-color: rgb(255, 122, 66);
+            color: white;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            font-weight: 600;
+            border: 0px;
+            transition: 0.2s ease-in-out;
+        }
+        .nav-button button:hover {
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        #home {
+            border-radius: 5px;
+            background-color: rgb(255, 237, 234);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+            width: 67%;
+            height: 650px;
+        }
+        .teks {
+            width: 600px;
+            height: auto;
+        }
+        .teks h1 {
+            color: rgb(10, 10, 10);
+            font-family: "Heebo", sans-serif;
+            font-size: 48px;
+            line-height: 55px;
+            font-weight: 600;
+            position: relative;
+        }
+        .teks p {
+            font-family: 'Raleway', sans-serif;
+            color: #6a6a6a;
+            font-size: 16px;
+            word-spacing: 3px;
+            line-height: 25px;
+        }
+        .icon a img {
+            width: 20px;
+            margin-right: 15px;
+            transition: 0.1s ease-in-out;
+            margin-top: 20px;
+        }
+        .icon a img:hover {
+            filter: saturate(0) brightness(0);
+        }
+        a {
+            text-decoration: none;
+        }
+        .home-image img{
+            width: 450px;
+            border-radius: 50%;
+        }
+        .aboud {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            margin-top: 130px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 71%;
+            height: 600px;
+        }
+        .aboud img {
+            width: 400px;
+            border-radius: 5px;
+        }
+        .about-us {
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #ff7a42;
+        }
+        .about-us span {
+            height: 1px;
+            width: 40px;
+            background: #0a0a0a;
+            display: inline-block;
+            bottom: 5px;
+            position: relative;
+            margin-right: 12px;
+        }
+        .about-text {
+            margin-left: 50px;
+            width: 840px;
+        }
+        .judul {
+            font-family: 'Heebo', sans-serif;
+            font-size: 35px;
+        }
+        .about-text p {
+            word-spacing: 3px;
+            line-height: 25px;
+        }
+        .about-icon-icon {
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+        }
+        .about-icon-icon img {
+            border: 2px dotted rgb(255, 122, 66);
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+        }
+        .icon-text {
+            display: flex;
+            flex-direction: column;
+            width: 130px;
+        }
+        .icon-text h1 {
+            font-size: 20px;
+            margin-bottom: -10px;
+            font-weight: 600;
+        }
+        .icon-text p {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .about-icon {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="navbar">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="/images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#menus">Menus</a>
+                    <a class="nav-link" href="#faq">Faq</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+                <div class="nav-button">
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="home">
+                <div class="teks">
+                    <h1>The Best Favorite Place Eat And Drink With Friendly Price</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae unde vitae hic impedit voluptate labore quam aliquam. Eaque, perspiciatis? Quaerat quibusdam natus distinctio accusantium eligendi eaque numquam deserunt at?</p>
+                    <div class="icon">
+                        <a href="">
+                            <img src="/icon/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="">
+                            <img src="/icon/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="">
+                            <img src="/icon/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="">
+                            <img src="/icon/youtube.png" alt="YouTube">
+                        </a>
+                        <a href="">
+                            <img src="/icon/linkedin.png" alt="Linkedin">
+                        </a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img src="/images/intro.png" alt="">
+                </div>
+            </div>
+            <div id="about">
+                <div class="aboud">
+                    <img src="/images/about.png" alt="">
+                    <div class="about-text">
+                        <div class="about-us">
+                            <span></span>
+                            ABOUT US
+                        </div>
+                        <h1 class="judul">We Were Founded In The 90's
+                            Innovate For The Better
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quod perspiciatis accusamus maxime iis ex quod perspiciatis accusamus maxime ommo nditiis ex quod perspiciatis accusamus maxime omm</p>
+                        <div class="about-icon">
+                            <div class="about-icon-icon">
+                                <img src="/icon/wifi.png" alt="Wifi">
+                                <div class="icon-text">
+                                    <h1>Free Wifi</h1>
+                                    <p>Features</p>
+                                </div>
+                            </div>
+                            <div class="about-icon-icon">
+                                <img src="/icon/dollar.png" alt="Wifi">
+                                <div class="icon-text">
+                                    <h1>Friendly Price</h1>
+                                    <p>Price</p>
+                                </div>
+                            </div>
+                            <div class="about-icon-icon">
+                                <img src="/icon/recycle.png" alt="Wifi">
+                                <div class="icon-text">
+                                    <h1>Clean & Cool</h1>
+                                    <p>Place</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
