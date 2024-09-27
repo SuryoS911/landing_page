@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
     <style>
         * {
             scroll-behavior: smooth;
@@ -181,6 +182,7 @@
             width: 130px;
         }
         .icon-text h1 {
+            font-family: 'Roboto', sans-serif;
             font-size: 20px;
             margin-bottom: -10px;
             font-weight: 600;
@@ -193,6 +195,52 @@
             display: flex;
             flex-direction: row;
             gap: 100px;
+        }
+        #contact {
+            background-color: rgb(255, 237, 234);
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            margin-top: 130px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 71%;
+            height: 400px;
+        }
+        #contact iframe {
+            width: 50%;
+            height: 400px;
+        }
+        .contact-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 40px;
+        }
+        .contact-text h2 {
+            font-family: 'Heebo', sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 43px;
+            margin-bottom: 50px;
+        }
+        .icon-phone {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .icon-phone img {
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgb(255, 122, 66);
+            padding: 10px;
+        }
+        .icon-phone p {
+            font-size: 15px;
+            color: #555;
+            font-weight: 500;
+            line-height: 30px;
         }
     </style>
 </head>
@@ -278,6 +326,23 @@
                                     <p>Place</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d774382.6761693481!2d-73.979681!3d40.69748800000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sKota%20New%20York%2C%20New%20York%2C%20Amerika%20Serikat!5e0!3m2!1sid!2sid!4v1727401845338!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact-text">
+                    <h2>Contact us</h2>
+                    <div class="contact-icon">
+                        <div class="icon-phone">
+                            <img src="phone.png" alt=""><p> +61 3 8376 6284</p>
+                        </div>
+                        <div class="icon-phone">
+                            <img src="email.png" alt=""><p> contact@domain.com</p>
+                        </div>
+                        <div class="icon-phone">
+                            <img src="maps.png" alt=""><p> 121 King Street, Melbourne Victoria 3000 Australia</p>
                         </div>
                     </div>
                 </div>
