@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta property="og:image" content="logo.png">
-    <meta name="description" content="Tugas Landing Page">
+    <meta name="description" content="Discover Shara Food & Drink, your destination for delicious meals and refreshing beverages. From savory dishes to delightful drinks, we bring you the finest flavors with fresh ingredients. Explore our menu and satisfy your cravings today!">
+    <meta name="robots" content="index, follow">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suryo Saputro - XI RPL 1</title>
+    <title>Shara Food & Drink</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
-    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
     <style>
         * {
             scroll-behavior: smooth;
         }
+
         body {
             font-size: 16px;
             font-family: 'Raleway', sans-serif;
         }
+
         .nav {
             background-color: white;
             position: fixed;
@@ -28,36 +34,43 @@
             width: 100%;
             height: 100px;
         }
+
         .navbar {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             margin-left: auto;
             margin-right: auto;
             margin-top: 25px;
             position: relative;
-            width: 70%;
+            width: 94%;
         }
+
         .nav-logo img {
             height: 30px;
             width: auto;
         }
+
         .nav-menu {
             display: flex;
             flex-direction: row;
             gap: 50px;
         }
+
         .nav-link {
             font-family: "Raleway", sans-serif;
             font-size: 20px;
+            font-weight: 500;
             color: #2f2f2f;
             text-decoration: none;
             transition: 0.1s ease-in-out;
         }
+
         .nav-link:hover {
             cursor: pointer;
             color: rgb(255, 122, 66);
         }
+
         .nav-button button {
             padding: 15px 30px;
             font-size: 13px;
@@ -69,10 +82,12 @@
             border: 0px;
             transition: 0.2s ease-in-out;
         }
+
         .nav-button button:hover {
             background-color: rgb(0, 0, 0);
             cursor: pointer;
         }
+
         #home {
             border-radius: 5px;
             background-color: rgb(255, 237, 234);
@@ -85,13 +100,15 @@
             margin-right: auto;
             padding-left: 40px;
             padding-right: 40px;
-            width: 67%;
-            height: 650px;
+            width: 76%;
+            height: 600px;
         }
+
         .teks {
             width: 600px;
             height: auto;
         }
+
         .teks h1 {
             color: rgb(10, 10, 10);
             font-family: "Heebo", sans-serif;
@@ -100,6 +117,7 @@
             font-weight: 600;
             position: relative;
         }
+
         .teks p {
             font-family: 'Raleway', sans-serif;
             color: #6a6a6a;
@@ -107,37 +125,45 @@
             word-spacing: 3px;
             line-height: 25px;
         }
+
         .icon a img {
             width: 20px;
             margin-right: 15px;
             transition: 0.1s ease-in-out;
             margin-top: 20px;
         }
+
         .icon a img:hover {
             filter: saturate(0) brightness(0);
         }
+
         a {
             text-decoration: none;
         }
-        .home-image img{
+
+        .home-image img {
             width: 450px;
             border-radius: 50%;
         }
+
         .aboud {
             display: flex;
             flex-direction: row;
             justify-content: start;
             align-items: center;
             margin-top: 130px;
+            margin-bottom: 100px;
             margin-left: auto;
             margin-right: auto;
-            width: 71%;
+            width: 82%;
             height: 600px;
         }
+
         .aboud img {
             width: 400px;
             border-radius: 5px;
         }
+
         .about-us {
             font-size: 14px;
             letter-spacing: 1px;
@@ -145,6 +171,7 @@
             margin-bottom: 15px;
             color: #ff7a42;
         }
+
         .about-us span {
             height: 1px;
             width: 40px;
@@ -154,18 +181,23 @@
             position: relative;
             margin-right: 12px;
         }
+
         .about-text {
             margin-left: 50px;
-            width: 840px;
+            width: 640px;
         }
+
         .judul {
+            width: 500px;
             font-family: 'Heebo', sans-serif;
             font-size: 35px;
         }
+
         .about-text p {
             word-spacing: 3px;
             line-height: 25px;
         }
+
         .about-icon-icon {
             width: 500px;
             display: flex;
@@ -173,32 +205,39 @@
             gap: 20px;
             align-items: center;
         }
+
         .about-icon-icon img {
             border: 2px dotted rgb(255, 122, 66);
-            width: 30px;
-            height: 30px;
-            padding: 10px;
+            width: 20px;
+            height: 20px;
+            padding: 7px;
         }
+
         .icon-text {
             display: flex;
             flex-direction: column;
             width: 130px;
         }
+
         .icon-text h1 {
             font-family: 'Roboto', sans-serif;
-            font-size: 20px;
-            margin-bottom: -10px;
+            font-size: 15px;
+            margin-bottom: -17px;
             font-weight: 600;
         }
+
         .icon-text p {
+            margin-bottom: 4px;
             font-size: 15px;
             font-weight: 500;
         }
+
         .about-icon {
             display: flex;
             flex-direction: row;
-            gap: 100px;
+            gap: 60px;
         }
+
         #contact {
             background-color: rgb(255, 237, 234);
             display: flex;
@@ -207,44 +246,55 @@
             margin-top: 130px;
             margin-left: auto;
             margin-right: auto;
-            width: 71%;
-            height: 400px;
+            width: 82%;
+            height: 350px;
         }
+
         #contact iframe {
             width: 50%;
-            height: 400px;
+            height: 350px;
         }
+
+        .contact-icon {
+            margin-bottom: 30px;
+        }
+
         .contact-text {
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-left: 40px;
         }
+
         .contact-text h2 {
             font-family: 'Heebo', sans-serif;
-            font-size: 50px;
+            font-size: 40px;
             font-weight: 600;
             line-height: 43px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
+
         .icon-phone {
             display: flex;
             flex-direction: row;
             gap: 20px;
             margin-top: 10px;
         }
+
         .icon-phone img {
-            width: 30px;
-            height: 30px;
+            width: 25x;
+            height: 25px;
             border: 1px solid rgb(255, 122, 66);
             padding: 10px;
         }
+
         .icon-phone p {
             font-size: 15px;
             color: #555;
             font-weight: 500;
             line-height: 30px;
         }
+
         footer {
             font-family: 'Raleway', sans-serif;
             color: #6a6a6a;
@@ -252,8 +302,256 @@
             font-size: 16px;
             font-weight: 500;
         }
+
+        .anggit-menu {
+            padding: 40px;
+            width: 1150px;
+            background-color: rgb(255, 237, 234);
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+
+        .anggit-open-hours {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .anggit-text-open {
+            display: flex;
+            justify-content: center;
+        }
+
+        .anggit-box {
+            border: 2px dotted rgb(255, 122, 66);
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+        .anggit-box p {
+            margin: 3px;
+        }
+
+        .anggit-box,
+        .anggit-open-sunday p {
+            margin: 2px;
+        }
+
+        .anggit-open-sunday {
+            background-color: rgb(255, 122, 66);
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            width: 450px;
+            margin: 20px 25%;
+            color: white;
+            font-weight: 600;
+            font-size: 22px;
+            justify-content: center;
+        }
+
+        #menus {
+            margin: auto;
+            width: 1240px;
+        }
+
+        .anggitcindy-atas {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .anggitcindy-judul {
+            justify-content: flex-start;
+            font-size: 25px;
+        }
+
+        .anggitcindy-button-menus {
+            justify-content: flex-end;
+            background-color: rgb(255, 237, 234);
+            height: 35px;
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .anggitcindy-button-menus a {
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.2s;
+        }
+
+        .anggitcindy-button-menus a:hover {
+            cursor: pointer;
+            color: rgb(255, 122, 66);
+        }
+
+        .anggitcindy-bawah {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            border-radius: 5px;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .anggitcindy-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ffedea;
+            width: 280px;
+            border-radius: 5px;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .anggitcindy-box img {
+            width: 300px;
+            box-sizing: cover;
+            border-radius: 5px;
+        }
+
+        .anggitcindy-keterangan {
+            margin: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .anggitcindy-keterangan span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .anggitcindy-keterangan img {
+            width: 90px;
+            display: block;
+            margin-left: 0px;
+            margin-right: 25px;
+        }
+
+        .anggitcindy-harga span {
+            width: 100px;
+            font-size: 30px;
+            color: #ff7a42;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .anggitcindy-harga img {
+            width: 75px;
+            margin-top: 5px;
+        }
+
+        .menu-bawah {
+            width: 1235px;
+            height: 600px;
+            margin-top: 100px;
+        }
+
+        .azrina-img {
+            width: 400px;
+            position: absolute;
+            bottom: 80px;
+            right: 25px;
+            padding: -20px;
+            border-radius: 5px;
+        }
+
+        .azrina-teks {
+            padding: 35px;
+            background-color: rgb(255, 237, 234);
+            color: rgb(10, 10, 10);
+            font-family: "Heebo", sans-serif;
+            font-size: 20px;
+            position: relative;
+            top: 350px;
+            width: auto;
+            border-radius: 5px;
+        }
+
+        #faq {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1240px;
+            height: 500px;
+            margin-top: 150px;
+        }
+
+        .faq-kiri {
+            height: 100%;
+            width: 40%;
+        }
+
+        .faq-kanan {
+            height: 100%;
+            width: 60%;
+        }
+
+        .accordion {
+            border: 1px solid #ffedea;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            background-color: white;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: white;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #444;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .faq-text .judul{
+            width: 60%;
+        }
+        .faq-text p {
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
+            color: #6a6a6a;
+            word-spacing: 2px;
+            line-height: 35px;
+        }
+        .faq-text button {
+            margin-top: 30px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="nav">
@@ -279,7 +577,9 @@
             <div id="home">
                 <div class="teks">
                     <h1>The Best Favorite Place Eat And Drink With Friendly Price</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae unde vitae hic impedit voluptate labore quam aliquam. Eaque, perspiciatis? Quaerat quibusdam natus distinctio accusantium eligendi eaque numquam deserunt at?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae unde vitae hic impedit
+                        voluptate labore quam aliquam. Eaque, perspiciatis? Quaerat quibusdam natus distinctio
+                        accusantium eligendi eaque numquam deserunt at?</p>
                     <div class="icon">
                         <a href="">
                             <img src="facebook.png" alt="Facebook">
@@ -313,7 +613,9 @@
                         <h1 class="judul">We Were Founded In The 90's
                             Innovate For The Better
                         </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quod perspiciatis accusamus maxime iis ex quod perspiciatis accusamus maxime ommo nditiis ex quod perspiciatis accusamus maxime omm</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quod perspiciatis
+                            accusamus maxime iis ex quod perspiciatis accusamus maxime ommo nditiis ex quod perspiciatis
+                            accusamus maxime omm</p>
                         <div class="about-icon">
                             <div class="about-icon-icon">
                                 <img src="wifi.png" alt="Wifi">
@@ -339,20 +641,226 @@
                         </div>
                     </div>
                 </div>
+                <div class="anggit-menu">
+                    <div class="anggit-text-open">
+                        <h1>Open Hours</h1>
+                    </div>
+                    <div class="anggit-open-hours">
+                        <div class="anggit-box">
+                            <p>MONDAY</p>
+                            <p>8AM-7PM</p>
+                        </div>
+                        <div class="anggit-box">
+                            <p>TUESDAY</p>
+                            <p>8AM-7PM</p>
+                        </div>
+                        <div class="anggit-box">
+                            <p>WEDNESDAY</p>
+                            <p>8AM-7PM</p>
+                        </div>
+                        <div class="anggit-box">
+                            <p>THURSDAY</p>
+                            <p>8AM-7PM</p>
+                        </div>
+                        <div class="anggit-box">
+                            <p>FRIDAY</p>
+                            <p>8AM-7PM</p>
+                        </div>
+                        <div class="anggit-box">
+                            <p>SATURDAY</p>
+                            <p>8AM-7PM</p>
+                        </div>
+                    </div>
+                    <div class="anggit-open-sunday">
+                        <p>SUNDAY</p>
+                        <P>24 HOURS</P>
+                    </div>
+                </div>
+            </div>
+            <div id="menus">
+                <div class="anggitcindy-atas">
+                    <div class="anggitcindy-judul">
+                        <h2>Choose Our Menus
+                            <br>
+                            Food And Drinks
+                        </h2>
+                    </div>
+                    <div class="anggitcindy-button-menus">
+                        <a href="#">Show All</a>
+                        <a href="#">Food</a>
+                        <a href="#">Drink</a>
+                    </div>
+                </div>
+
+                <div class="anggitcindy-bawah">
+
+                    <div class="anggitcindy-box">
+                        <a href="avocado-egg.png">
+                            <img src="avocado-egg.png" alt="Avocado Egg - A delicious combination of creamy avocado and a perfectly cooked egg" title="Avocado Egg Delight - Creamy and healthy breakfast option">
+                        </a>
+
+                        <div class="anggitcindy-keterangan">
+                            <span>Avocado Egg</span>
+                            <img src="star.png" alt="">
+                            <div class="anggitcindy-harga">
+                                <span>$45</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anggitcindy-box">
+                        <a href="fresh-orange.png">
+                            <img src="fresh-orange.png" alt="Fresh Orange - A refreshing glass of freshly squeezed orange juice" title="Fresh Orange Juice - Energize your day with natural citrus flavor">
+                        </a>
+
+                        <div class="anggitcindy-keterangan">
+                            <span>Fresh Orange</span>
+                            <img src="star.png" alt="">
+                            <div class="anggitcindy-harga">
+                                <span>$15</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="anggitcindy-box">
+                        <a href="healthy-food.png">
+                            <img src="healthy-food.png" alt="Healthy Food - A nutritious plate filled with fresh vegetables and wholesome ingredients" title="Healthy Food - Eat well, feel good">
+                        </a>
+
+                        <div class="anggitcindy-keterangan">
+                            <span>Healthy Food</span>
+                            <img src="star.png" alt="">
+                            <div class="anggitcindy-harga">
+                                <span>$35</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="anggitcindy-box">
+                        <a href="great-grilled.png">
+                            <img src="great-grilled.png" alt="Great Grilled - Juicy grilled meat served with a side of vegetables" title="Great Grilled - Perfectly grilled goodness for a flavorful meal">
+                        </a>
+
+                        <div class="anggitcindy-keterangan">
+                            <span>Great Grilled</span>
+                            <img src="star.png" alt="">
+                            <div class="anggitcindy-harga">
+                                <span>$38</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anggitcindy-box">
+                        <a href="strawberry-ice.png">
+                            <img src="strawberry-ice.png" alt="Strawberry Ice - A delightful scoop of refreshing strawberry ice cream" title="Strawberry Ice Cream - Sweet and fruity frozen treat">
+                        </a>
+
+                        <div class="anggitcindy-keterangan">
+                            <span>Strawberry Ice</span>
+                            <img src="star.png" alt="">
+                            <div class="anggitcindy-harga">
+                                <span>$12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anggitcindy-box">
+                        <a href="black-coffee.png">
+                            <img src="black-coffee.png" alt="Black Coffee - A steaming cup of rich and aromatic black coffee" title="Black Coffee - Bold and robust flavor for coffee lovers">
+                        </a>
+
+                        <div class="anggitcindy-keterangan">
+                            <span>Black Coffee</span>
+                            <img src="star.png" alt="">
+                            <div class="anggitcindy-harga">
+                                <span>$21</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu-bawah">
+                    <div class="azrina-teks">
+                        <img class="azrina-img" src="cta.png" alt="">
+                        <h2>Come On,</h2>
+                        <h2>Eat And Drink At Our Place</h2>
+                        <div class="nav-button">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="faq">
+                <div class="faq-kiri">
+                    <div class="faq-text">
+                        <div class="about-us">
+                            <span></span>
+                            FAQ
+                        </div>
+                        <h1 class="judul">Frequently Asked Questions
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eaque odit, iusto autem vel ullam ut! Totam voum.</p>
+                        <div class="nav-button">
+                            <button>Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-kanan">
+                    <div class="akordion">
+                        <button class="accordion">Can order bulk food?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam, consequatur ipsa
+                                natus eaque, repellendus quas corrupti vel quae suscipit possimusd</p>
+                        </div>
+                        <button class="accordion">Delivery order question?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam, consequatur ipsa
+                                natus eaque, repellendus quas corrupti vel quae suscipit possimusd</p>
+                        </div>
+                        <button class="accordion">How many table available?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam, consequatur ipsa
+                                natus eaque, repellendus quas corrupti vel quae suscipit possimusd</p>
+                        </div>
+                        <button class="accordion">The chef can be invite?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam, consequatur ipsa
+                                natus eaque, repellendus quas corrupti vel quae suscipit possimusd</p>
+                        </div>
+                        <button class="accordion">Order via marketplace?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam, consequatur ipsa
+                                natus eaque, repellendus quas corrupti vel quae suscipit possimusd</p>
+                        </div>
+                        <button class="accordion">Payment support order food?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam, consequatur ipsa
+                                natus eaque, repellendus quas corrupti vel quae suscipit possimusd</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="contact">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d774382.6761693481!2d-73.979681!3d40.69748800000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sKota%20New%20York%2C%20New%20York%2C%20Amerika%20Serikat!5e0!3m2!1sid!2sid!4v1727401845338!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d774382.6761693481!2d-73.979681!3d40.69748800000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sKota%20New%20York%2C%20New%20York%2C%20Amerika%20Serikat!5e0!3m2!1sid!2sid!4v1727401845338!5m2!1sid!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="contact-text">
                     <h2>Contact us</h2>
                     <div class="contact-icon">
                         <div class="icon-phone">
-                            <img src="phone.png" alt=""><p> +61 3 8376 6284</p>
+                            <img src="phone.png" alt="">
+                            <p> +61 3 8376 6284</p>
                         </div>
                         <div class="icon-phone">
-                            <img src="email.png" alt=""><p> contact@domain.com</p>
+                            <img src="email.png" alt="">
+                            <p> contact@domain.com</p>
                         </div>
                         <div class="icon-phone">
-                            <img src="maps.png" alt=""><p> 121 King Street, Melbourne Victoria 3000 Australia</p>
+                            <img src="maps.png" alt="">
+                            <p> 121 King Street, Melbourne Victoria 3000 Australia</p>
                         </div>
                     </div>
                 </div>
@@ -364,5 +872,22 @@
             </footer>
         </div>
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
